@@ -1,0 +1,53 @@
+.nosotros{
+    &__title{
+        @include titles(50px)
+    }
+
+    &__text{
+        color: var(--blanco);
+        font-size: 20px;
+        line-height: 1.5;
+        text-align: justify;
+    }
+
+    &__img{
+        max-height: 400px;
+        width: 300px;
+        border-radius: 10%;
+        border: 1px solid var(--negro);
+        transition: all 0.2s;
+
+        &:hover{
+            transform: scale(1.1);
+            border: 2px solid var(--dorado);
+        }
+    }
+}
+
+.mision{
+
+    &__title{
+        color: var(--dorado);
+        font-size: 40px;
+    }
+
+    &__text{
+        color: var(--blanco);
+        font-size: 20px;
+        text-align: justify;
+        line-height: 1.5;
+    }
+
+    &__img{
+        width: 200px;
+        height: 300px;
+        border-radius: 10%;
+        border: 1px solid var(--negro);
+        transition: all 0.2s;
+
+        &:hover{
+            transform: scale(1.1);
+            border: 2px solid var(--dorado);
+        }
+    }
+}

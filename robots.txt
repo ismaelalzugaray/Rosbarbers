@@ -1,0 +1,5 @@
+User-Agent: *
+
+Allow: /
+
+Sitemap: https://ismaelalzugaray.github.io/Desafio-7/sitemap.xml

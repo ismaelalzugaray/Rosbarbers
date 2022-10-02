@@ -1,0 +1,89 @@
+.contactanos-container{
+
+    &__title{
+        @include titles(50px);
+    }
+}
+
+
+.contactanos{
+    display: inline-block;
+    background-color: var(--negrott);
+    height: 700px;
+    width: 350px;
+    border-radius: 2%;
+
+    &__form{
+        color: var(--blanco);
+
+        &-label{
+            display: block;
+            font-weight: bold;
+            letter-spacing: 1px;
+            color: var(--blanco);
+        }
+
+        select{
+            background-color: var(--negro);
+            color: var(--blanco);
+            border: 1px solid var(--amarillo);
+            padding: 5px;
+            margin: 5px;
+        }
+
+        textarea{
+            background-color: var(--negro);
+            color: var(--blanco);
+            border: 1px solid var(--amarillo);
+            padding: 5px;
+            margin: 5px;
+            min-height: 150px;
+            min-width: 230px;
+            max-height: 150px;
+            max-width: 230px;
+            transition: all 0.2s;
+
+            &:focus{
+                transform: scaleX(1.1);
+            }
+        }
+
+        input{
+            background-color: var(--negro);
+            color: var(--blanco);
+            border: 1px solid var(--amarillo);
+            padding: 5px;
+            margin: 5px;
+            transition: all 0.2s;
+
+            &:focus{
+                transform: scaleX(1.1);
+            }
+        }
+
+        button{
+            background-color: var(--negro);
+            color: var(--amarillo);
+            border-radius: 10px;
+            padding: 5px;
+            border: 1px solid var(--amarillo);
+            margin: 15px 10px;
+            transition: all 0.2s;
+
+            &:hover{
+                transform: scale(1.1);
+            }
+        }
+
+        div{
+            margin: 5px; 
+        }
+    }
+}
+
+
+.newsletter-label{
+    font-weight: bold;
+    letter-spacing: 1px;
+    color: var(--blanco);
+}

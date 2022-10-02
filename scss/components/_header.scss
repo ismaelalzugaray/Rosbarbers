@@ -1,0 +1,41 @@
+.header{
+    background-color: var(--negrot);
+    border-bottom: 1px solid var(--dorado);
+    position: sticky;
+    top: 0%;
+    z-index: 2;
+
+    &__logo{
+        @extend .logos
+    }
+
+    .navbar{
+    
+        ul{
+            padding-left: 0;
+    
+            li{
+                transition: all 0.2s;
+              
+                &:hover{
+                    transform: scale(1.2);
+                }
+    
+                a{
+                    transition: all 1s;
+    
+                    &:hover{
+                        color: var(--dorado);
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+@media (max-width: 510px){
+   header a{
+    font-size: 10px;
+   }
+}

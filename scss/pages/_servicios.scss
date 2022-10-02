@@ -1,0 +1,66 @@
+.servicios{
+    &__title{
+        @include titles(50px)
+    }
+
+    &__text{
+        color: var(--blanco);
+        font-size: 20px;
+    }
+}
+
+.cards{
+    &__container{
+        background-color: var(--negrot);
+        text-align: center;
+        border-radius: 22px;
+        border: 1px solid var(--negro);
+        max-width: 300px;
+        transition: all 0.2s;
+        margin-right: 0;
+        margin: 50px 0;
+
+        &:hover{
+            transform:  translateY(-10px);
+            box-shadow: var(--dorado) 0px 1px 3px;
+        }
+
+        &-img{
+            width: 100%;
+            border-top-left-radius: 10%;
+            border-top-right-radius: 10%;
+            height: 200px;
+        }
+
+        &-title{
+            color: var(--amarillo);
+            border-bottom: 1px solid var(--dorado);
+        }
+
+        &-info{
+            min-height: 180px;
+            padding: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: center;
+
+            p{
+                color: var(--blanco);
+                line-height: 1.5; 
+            }
+
+            a{
+                text-decoration: none;
+                color: var(--amarillo);
+                border: 1px solid var(--dorado);
+                border-radius: 15px;
+                padding: 5px;
+
+                &:hover{
+                    transform: scale(1.1);
+                }
+            }
+        }
+    }
+}

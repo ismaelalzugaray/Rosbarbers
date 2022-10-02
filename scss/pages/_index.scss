@@ -1,0 +1,51 @@
+.index{
+    &__title{
+        @include titles(50px)
+    }
+    &__text{
+        color: var(--blanco);
+        font-size: 20px;
+    }
+    &__img{
+        max-height: 400px;
+        max-width: 600px;
+        border-radius: 5%;
+        border: 1px solid var(--negro);
+        transition: all 0.2s;
+        
+        &:hover{
+            transform: scale(1.1);
+            border: 2px solid var(--dorado) ;
+        }
+    }
+}
+
+.horarios{
+    &__table{
+        border: 1px solid var(--dorado);
+        color: var(--blanco);
+        border-collapse: collapse;
+        background-color: var(--negrot) ;
+        text-align: center;
+        caption-side: top;
+
+        &-caption{
+            font-size: 20px;
+            margin: 5px 0;
+            color: var(--amarillo);
+            text-align: center;
+        }
+
+         td{
+            border : 1px solid var(--dorado);
+            padding: 10px;
+            color: var(--blanco);
+        }
+
+        th{
+            padding: 15px;
+            color: var(--blanco);
+        }
+        }
+}
+

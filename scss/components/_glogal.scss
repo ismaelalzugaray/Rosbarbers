@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Serif+Pro&display=swap');
+
+:root{
+    --amarillo: rgb(255, 211, 105);
+    --blanco: rgb(255, 251, 251);
+    --dorado: #ffd369;
+    --negro: rgb(0, 0, 0);
+    --negrot: rgba(0, 0, 0, 0.900);
+    --negrott: rgba(0, 0, 0, 0.62); 
+
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Source Serif Pro', serif;
+    list-style: none;
+    // color: blue;
+}
+
+a{
+    text-decoration: none;
+    color: var(--blanco);
+}
+
+body{
+    background-image: url('../assets/images/background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.wsp__img{
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    margin-right: 15px;
+    margin-bottom: 15px;
+} 
+
+.logos{
+    height: 100px;
+    width: 100px;
+    border-radius: 50%;
+    padding: 5px 0;
+}
+
+@mixin titles ($size){
+    color: var(--dorado);
+    font-size: $size;
+    text-shadow: 3px 3px var(--negro);
+    font-style: italic;
+    text-align: center;
+}
+
+@media (max-width: 991px){
+    .wsp__img{
+        height: 30px;
+        width: 30px;
+    }
+}
