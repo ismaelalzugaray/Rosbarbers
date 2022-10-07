@@ -12,11 +12,12 @@
 
 *{
     padding: 0;
-    margin: 0;
+    margin: 0px;
     box-sizing: border-box;
     font-family: 'Source Serif Pro', serif;
     list-style: none;
-    // color: blue;
+    margin-left: 0 !important;
+    margin-right: 0 !important;
 }
 
 a{
